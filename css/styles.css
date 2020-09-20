@@ -1,0 +1,100 @@
+@media all and (max-width:750px){
+    body {
+        background-color: #34C5C5;
+        background-repeat: no-repeat;
+        background-image: url('https://i.pinimg.com/originals/fe/51/94/fe51946adfd7130851c323f66c1ef9bc.jpg');
+        background-size: 100vh;
+    }
+    nav {
+        position: fixed;
+        background-color: #140F2D;
+        height: 15vh;
+        color: #34C5C5;
+    }
+    .navbar-brand, svg {
+        vertical-align: middle;
+        margin: 0;
+    }
+    h1 {
+        color: #ffffff;
+        background-color: rgb(	255, 246, 235, .2);
+        margin: 5% ;
+        text-align: center;
+        padding: 3vw;
+        font-family: 'Merienda One', cursive;
+    }
+    section#html5, section#css3, section#javas {
+        background-color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        margin: 5%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2vw;
+    }
+    section svg{
+        width: 20vw;
+        display: inline-flex;
+        display: -moz-inline-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        margin: 5%;
+    }
+    section p {
+        display: inline-flex;
+        display: -moz-inline-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        width: 70%;
+        text-align: justify;
+        margin: 5%;
+    }
+    section#css3 svg {
+        width: 30vw;
+        margin: 1.5%;
+    }
+    section#javas {
+        margin-bottom: 22vh;
+    }
+}
+
+@media all and (min-width:701px){
+    body {
+        background-color: red;
+    }
+}
+#dropup {
+    position: relative;
+    display: inline-block;
+}
+#dropup-content {
+    color: white;
+    background-color: rgb(20, 15, 45, .9);
+    width: 90vw;
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    padding: 1em;
+    z-index: 1;
+    border-radius: 25px 25px 0px 0px;
+}
+#dropup-content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: right;
+}
+.btn, .btn:active, .btn:focus, .btn:hover, .btn:visited {
+    transition: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+nav svg {
+    width: 2.5rem;
+}
+.sr-only {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
