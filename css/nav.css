@@ -1,0 +1,104 @@
+@media all and (max-width:768px){
+    #dropup {
+        position: relative;
+        display: inline-block;
+    }
+    #dropup-content {
+        color: white;
+        background-color: rgb(20, 15, 45, .9);
+        width: 99vw;
+        display: none;
+        position: absolute;
+        bottom: 10vh;
+        right: -15px;
+        padding: 1em;
+        z-index: 1;
+        border-radius: 25px 25px 0px 0px;
+        margin: 0 0;
+    }
+    #dropup-content a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: right;
+    }
+    nav svg {
+        width: 2.5rem;
+    }
+    nav {
+        position: fixed;
+        background-color: #140F2D;
+        height: 15vh;
+        color: #34C5C5;
+    }
+    .navbar-brand, svg {
+        vertical-align: middle;
+        margin: 0;
+    }
+}
+@media all and (min-width:769px){
+    nav p {
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        margin-top: 2rem;
+    }
+    #dropup {
+        position: relative;
+        display: inline-block;
+    }
+    #dropup-content {
+        color: white;
+        background-color: rgb(255, 255, 255, .9);
+        width: 50vw;
+        height: 98vh;
+        display: none;
+        position: fixed;
+        padding: 1em;
+        z-index: 100;
+        right: 10vw;
+        bottom: 1vh;
+        border-radius: 25px 0px 0px 25px;
+    }
+    #dropup-content a {
+        text-decoration: none;
+        color: #000000;
+        display: block;
+        text-align: right;
+        font-weight: bolder;
+    }
+    nav {
+        background-color: #140F2D; /*#FF8484;*/
+        color: #ffffff;
+        width: 10vw;
+        margin: 0;
+        overflow: hidden;
+        padding: 5%;
+        position: fixed !important;
+        right: 0 !important;
+        left: 90vw !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    nav svg {
+        width: 2.5rem;
+        vertical-align: middle;
+    }
+    #dropup button {
+        margin-bottom: .5rem;
+    }
+}
+
+.btn, .btn:active, .btn:focus, .btn:hover, .btn:visited {
+    transition: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.sr-only {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}

@@ -1,19 +1,20 @@
-@media all and (max-width:750px){
+@media all and (max-width:768px){
+    .lgandup img {
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 0;
+    }
+    .big {
+        display: none;
+    }
     body {
-        background-color: #34C5C5;
-        background-repeat: no-repeat;
-        background-image: url('https://i.pinimg.com/originals/fe/51/94/fe51946adfd7130851c323f66c1ef9bc.jpg');
-        background-size: 100vh;
-    }
-    nav {
-        position: fixed;
         background-color: #140F2D;
-        height: 15vh;
-        color: #34C5C5;
-    }
-    .navbar-brand, svg {
-        vertical-align: middle;
-        margin: 0;
+        background-image: url('https://i.pinimg.com/originals/cf/d3/bc/cfd3bc0577f759a1f130f0ff59163055.jpg');/*https://i.pinimg.com/originals/42/83/46/428346683f6f1416a5ce6b2208174447.jpg');
+      */height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
     }
     h1 {
         color: #ffffff;
@@ -21,12 +22,11 @@
         margin: 5% ;
         text-align: center;
         padding: 3vw;
-        font-family: 'Merienda One', cursive;
     }
     section#html5, section#css3, section#javas {
         background-color: rgba(255, 255, 255, 0.6);
         display: flex;
-        margin: 5%;
+        margin: 10%;
         align-items: center;
         justify-content: center;
         padding-left: 2vw;
@@ -48,53 +48,81 @@
         text-align: justify;
         margin: 5%;
     }
-    section#css3 svg {
-        width: 30vw;
-        margin: 1.5%;
-    }
     section#javas {
-        margin-bottom: 22vh;
+        margin-bottom: 20vh;
     }
 }
 
-@media all and (min-width:701px){
-    body {
-        background-color: red;
+@media all and (min-width:769px){
+    main {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+    }
+    section {
+        z-index: 5;
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        margin: 8%;
+        padding: 2.5%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    h1 {
+        margin: 10rem;
+    }
+    .info {
+        width: 60vw;
+        padding: 10%;
+        padding-top: 5%;
+    }
+    div.lgandup {
+        /*display: inline-block;*/
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        height: 100vh;
+        padding: 10%;
+        padding-left: 15%;
+        justify-content: space-around;
+    }
+    img#backimg {
+        z-index: -100;
+        position: fixed;
+        top: 0;
+        display: block;
+        height: 100vh;
+        width: auto;
+    }
+    div.lgandup>img {
+        width: 20rem;
+        align-self: center;
+        margin-left: 5rem;
+    }
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        align-self: center;
+        z-index: 5;
+        font-size: 2em;
+        line-height: 2em;
+        width: 200%;
+        margin: 10% !important;
+        /*background-color: rgba(255, 255, 255, 1);*/
+    }
+    p {
+        width: 60%;
+    }
+    section>svg {
+        width: 30%;
     }
 }
-#dropup {
-    position: relative;
-    display: inline-block;
+
+@media all and (min-width:2000px){
+    img {
+        width: 2540px;
+    }
 }
-#dropup-content {
-    color: white;
-    background-color: rgb(20, 15, 45, .9);
-    width: 90vw;
-    display: none;
-    position: absolute;
-    bottom: 60px;
-    right: 0px;
-    padding: 1em;
-    z-index: 1;
-    border-radius: 25px 25px 0px 0px;
-}
-#dropup-content a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    text-align: right;
-}
-.btn, .btn:active, .btn:focus, .btn:hover, .btn:visited {
-    transition: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-nav svg {
-    width: 2.5rem;
-}
-.sr-only {
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
+h1 {
+font-family: 'Merienda One', cursive;
 }

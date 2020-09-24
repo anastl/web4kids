@@ -1,4 +1,4 @@
-@media all and (max-width:740px){
+@media all and (max-width:768px){
     .carousel-inner>.active {
         background-color: rgba(255, 255, 255, 0.6);
         font-weight: bold;
@@ -15,8 +15,55 @@
         margin-bottom: 10%;
         text-align: center;
     }
+    h1 {
+        font-family: 'Merienda One', cursive;
+        color: #ffffff;
+        background-color: rgb(	255, 246, 235, .2);
+        margin: 5% ;
+        text-align: center;
+        padding: 3vw;
+    }
+    body {
+        background-color: #140F2D;
+        background-image: url('https://i.pinimg.com/originals/cf/d3/bc/cfd3bc0577f759a1f130f0ff59163055.jpg');/*https://i.pinimg.com/originals/42/83/46/428346683f6f1416a5ce6b2208174447.jpg');
+      */height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    #backimg{
+        display: none;
+    }
 }
-
+@media all and (min-width:769px){
+    h1 {
+        font-family: 'Merienda One', cursive;
+        color: #ffffff;
+        background-color: rgb(	255, 246, 235, .2);
+        margin: 5% ;
+        text-align: center;
+        padding: 3vw;
+    }
+    img#backimg {
+        z-index: -100;
+        position: fixed;
+        top: 0;
+        display: block;
+        height: 100vh;
+        width: auto;
+    }
+    main {
+        width: 90vw;
+    }
+    .carousel-inner>.active {
+        background-color: rgba(255, 255, 255, 0.6);
+        font-weight: bold;
+    }
+    div.active {
+        padding: 10vw;
+    }
+}
 img {
     width: 80%;
     margin: auto auto;
