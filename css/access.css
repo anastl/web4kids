@@ -45,6 +45,11 @@
         text-align: center;
         padding: 3vw;
     }
+    h4 {
+        font-family: 'Merienda One', cursive;
+        margin-bottom: 10%;
+        text-align: center;
+    }
     img#backimg {
         z-index: -100;
         position: fixed;
