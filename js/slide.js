@@ -14,7 +14,7 @@ function clickJumbor() {
         }
     }
     else {    
-
+        alert (document.getElementById('shownbig').style.display);
         for (var i=0; i<pics.length; i++){
             if (current.src == pics[i].src){
                 next = i;
@@ -49,7 +49,7 @@ function clickJumbol() {
         }
     }
     else {
-
+        alert (document.getElementById('shownbig').style.display);
         for (var i=0; i<pics.length; i++){
             if (current.src == pics[i].src){
                 next = i;
