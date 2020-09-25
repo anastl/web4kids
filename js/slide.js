@@ -3,7 +3,7 @@ function clickJumbor() {
     var pics = document.getElementsByClassName('pic');
     var next = 0;
 
-    if ( document.getElementById('shownbig').style.display != 'none' ){
+    if ( document.documentElement.clientWidth >= 769 ){
         if (document.getElementById('shown').src == pics[0].src){
             document.getElementById('shown').src = 'img/web-3.jpg';
             document.getElementById('shownbig').src = 'img/web-4.jpg';
@@ -14,7 +14,6 @@ function clickJumbor() {
         }
     }
     else {    
-        alert (document.getElementById('shownbig').style.display);
         for (var i=0; i<pics.length; i++){
             if (current.src == pics[i].src){
                 next = i;
@@ -38,7 +37,7 @@ function clickJumbol() {
     var pics = document.getElementsByClassName('pic');
     var next = 0;
 
-    if ( document.getElementById('shownbig').style.display != 'none' ) {
+    if ( document.documentElement.clientWidth >= 769 ){
         if (document.getElementById('shown').src == pics[0].src){
             document.getElementById('shown').src = 'img/web-3.jpg';
             document.getElementById('shownbig').src = 'img/web-4.jpg';
@@ -49,7 +48,6 @@ function clickJumbol() {
         }
     }
     else {
-        alert (document.getElementById('shownbig').style.display);
         for (var i=0; i<pics.length; i++){
             if (current.src == pics[i].src){
                 next = i;
